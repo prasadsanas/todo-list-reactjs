@@ -18,6 +18,7 @@ const EditTask = ({ modal, toggle, updateTask, taskObj }) => {
   useEffect(() => {
     setTaskName(taskObj.Name);
     setDescription(taskObj.Description);
+    // eslint-disable-next-line
   }, []);
 
   const handleUpdate = (e) => {
