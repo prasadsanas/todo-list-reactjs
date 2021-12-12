@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
 const CreateTask = ({ modal, toggle, save }) => {
-  const [taskName, setTaskName] = useState("");
-  const [description, setDescription] = useState("");
+  const [taskName, setTaskName] = useState(" ");
+  const [description, setDescription] = useState(" ");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,6 +20,8 @@ const CreateTask = ({ modal, toggle, save }) => {
     taskObj["Name"] = taskName;
     taskObj["Description"] = description;
     save(taskObj);
+    setTaskName(" ");
+    setDescription(" ");
   };
 
   return (

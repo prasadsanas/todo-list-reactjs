@@ -67,7 +67,7 @@ const Cards = ({ taskObj, index, deleteTask, updateListArray }) => {
             style={{
               color: colors[index % 5].primaryColor,
               cursor: "pointer",
-              paddingRight: "10px",
+              paddingRight: "15px",
             }}
             onClick={() => setModal(true)}
           ></i>
